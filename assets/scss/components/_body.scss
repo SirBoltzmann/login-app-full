@@ -1,0 +1,28 @@
+/*=============== BODY CSS ===============*/
+
+body {
+    font-family: montserrat, sans serif;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   min-height: 100vh;
+   background: url(../img/picture1.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+/* ========== WHEN LOGIN IS ACTIVE ============ */
+body.active {
+    #home, #about, #services, #services-2, #blog, #contact, #footer {
+        opacity: 0.2;
+        transition: 1s ease-in-out;
+    }
+}   
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

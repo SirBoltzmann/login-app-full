@@ -1,0 +1,93 @@
+/*=============== HEADER CSS ===============*/
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*"align-items" sirve para alinear objetos en el "Y axis"*/
+    z-index: 99;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px rgba( 0, 0, 0, 0.4);
+}
+
+.logo {
+    color: rgb(235, 235, 224);
+    font-size: 2.3rem;
+    user-select: none;
+    margin-right: auto;
+    transition: all 1s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.logo-icon {
+    opacity: 0;
+    transition: 1s ease-in-out;
+    transform: translateX(-200px);
+}
+
+.logo:hover .logo-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-link.active-link {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar a {
+    color: rgb(246, 224, 196);
+    position: relative;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 45px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+
+.navbar a:hover::after {
+    transform-origin: right;
+    transform: scaleX(1)
+}
+
+.nav-button {
+    width: 140px;
+    height: 50px;
+    padding: 0 auto;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 40px;
+    transition: all 1s;
+}
+
+.navbar .nav-button:hover {
+    color: #162838;
+    background-color: #fff;
+}

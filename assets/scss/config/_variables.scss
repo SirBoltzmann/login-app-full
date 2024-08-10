@@ -1,0 +1,65 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --hue: 220; /* Azul para la temática nocturna */
+    --sat: 50%; /* Saturación moderada para no ser muy brillante */
+    --first-color: hsl(var(--hue), var(--sat), 40%); /* Color principal más oscuro */
+    --first-color-light: hsl(var(--hue), var(--sat), 70%); /* Color principal más claro */
+    --first-color-lighten: hsl(var(--hue), var(--sat), 60%); /* Un poco más claro que el principal */
+    --first-color-alt: hsl(var(--hue), var(--sat), 30%); /* Alternativa más oscura */
+    --title-color: hsl(var(--hue), 4%, 85%); /* Color para títulos, claro para destacar */
+    --text-color: hsl(var(--hue), 4%, 83%); /* Color de texto principal */
+    --text-color-light: hsl(var(--hue), 4%, 50%); /* Color de texto más claro */
+    --body-color: hsl(var(--hue), 10%, 10%); /* Fondo del cuerpo muy oscuro para el contraste */
+    --container-color: #1A1A1A; /* Color del contenedor, casi negro */
+    --scroll-bar-color: hsl(var(--hue), 4%, 30%); /* Color de la barra de desplazamiento */
+    --scroll-thumb-color: hsl(var(--hue), 4%, 50%); /* Color del pulgar de la barra */
+    --border-color: hsl(var(--hue), 4%, 85%); /* Color para bordes, claro para destacar */
+    --border-color-darken: hsl(var(--hue), 13%, 36%); /* Color para bordes, claro para destacar */
+
+    /*========== Colors for white sections ==========*/
+    --dark-text-color: hsl(220, 8%, 19%); /* Texto oscuro para contraste en fondo claro */
+    --second-bg-color: hsl(193, 50%, 80%); /*Una tonalidad de blanco y un poco de celeste con opacidad..*/
+    --darker-text-color: hsl(220, 8%, 9%); /* Texto oscuro para contraste en fondo claro */
+    --dark-title-color: hsl(var(--hue), 19%, 23%); /* Color para títulos, claro para destacar */
+
+    /*========== Font and typography ==========*/
+    --body-font: 'poppins', 'sans-serif';
+    --biggest-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+
+    /*========== Responsive typography ==========*/
+    @media screen and (min-width: 968px){
+        --biggest-font-size: 3.2rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1.1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== Margenes ==========*/
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}

@@ -1,0 +1,85 @@
+/*=============== CONTACT ===============*/
+.contact {
+    background: hsla(183, 50%, 80%, 0.7);
+    backdrop-filter: blur(5px);
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 1.3fr 1.25fr;
+        padding-bottom: 3rem;
+        margin: 1rem 6rem;
+    }
+
+    &__title {
+        text-align: initial;
+        color: var(--dark-text-color);
+    }
+
+    &__description {
+        text-align: initial;
+        color: var(--dark-text-color);
+    }
+
+    &__content {
+        row-gap: 0.75rem;
+    }
+
+    &__address {
+        font-size: var(--small-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--dark-text-color);
+    }
+
+    &__information {
+        font-weight: initial;
+        color: var(--dark-text-color);
+    }
+
+    &__button {
+        height: 60px;
+        width: 280px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-top: 2rem;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+        border: 2px solid #252525;
+        overflow: hidden;
+        border-radius: 30px;
+        color: #333;
+        transition: all 0.8s ease-in-out;
+      }
+      
+      &__button-txt {
+        z-index: 1;
+        font-weight: 800;
+        letter-spacing: 4px;
+      }
+      
+      &__type-1::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.65s ease-in-out;
+        background-color: #333;
+        border-radius: 30px;
+        visibility: hidden;
+        height: 10px;
+        width: 10px;
+        z-index: -1;
+      }
+      
+      &__button:hover {
+        box-shadow: 1px 1px 150px #252525;
+        color: #fff;
+        border: none;
+      }
+      
+      &__type-1:hover::after {
+        visibility: visible;
+        transform: scale(100) translateX(2px);
+      }
+}

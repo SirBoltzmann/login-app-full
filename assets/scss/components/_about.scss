@@ -1,0 +1,99 @@
+/*=============== ABOUT CSS ===============*/
+.about {
+    background: hsla(183, 50%, 80%, 0.7);
+    backdrop-filter: blur(5px);
+
+    &__container {
+        row-gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem;
+    }
+
+    &__title {
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-bold);
+        margin-bottom: var(--mb-2);
+        color: var(--dark-title-color);
+    }
+
+    &__description {
+        margin-bottom: 3rem;
+        font-weight: 400;
+        color: var(--dark-text-color);
+    }
+
+    &__images {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: 4rem;
+        height: 80vh;
+    }
+
+    &__img-wrapper-1,
+    &__img-wrapper-2 {
+        position: absolute;
+        width: 340px;
+        height: 350px;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        transition: all 0.7s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__img-wrapper:hover {
+        transform: scale(1.03);
+    }
+
+    &__img-wrapper-1{
+        z-index: 1;
+        left: -3rem;
+        top: -2rem;
+    }
+
+    &__img-wrapper-2 {
+        z-index: 2;
+        top: 13.5rem;
+        left: 11.5rem;
+        
+    }
+
+    &__img {
+        width: 330px;
+        height: 97%;
+        border-radius: 0.8rem;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social a {
+        font-size: 2rem;
+        color: var(--dark-text-color);
+        border: 2px solid var(--dark-text-color);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        line-height: 42px;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin: 0 10px;
+        transition: 0.4s ease-in-out;
+    }
+
+    &__social a:hover {
+        background-color: var(--dark-text-color);
+        transform: scale(1.2) translateY(-10px);
+        color: var(--text-color);
+        box-shadow: 1px 3px 15px var(--dark-text-color);
+    }
+
+}

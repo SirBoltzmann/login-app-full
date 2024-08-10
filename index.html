@@ -4,81 +4,342 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="assets/scss/styles.css">
     <title>Stellaris</title>
 </head> 
 <body>
+    <!--=============== HEADER ===============-->
     <header>        
-        <h2 class="logo">Stellaris</h2>
+        <h2 class="logo">Stellaris <span class="logo-icon"><i class='bx bxs-planet service-icon-i'></i></span> </h2>
         <nav class="navbar">
-            <a href="#" class="nav-link nav-link-main active">Home</a>
-            <a href="#" class="nav-link nav-link-about">About Us</a>
-            <a href="#" class="nav-link nav-link-services">Services</a>
-            <a href="#" class="nav-link nav-link-contact">Contact</a>
+            <a href="#home" class="nav-link nav-link-main">Home</a>
+            <a href="#about" class="nav-link nav-link-about">About Us</a>
+            <a href="#services" class="nav-link nav-link-services">Services</a>
+            <a href="#blog" class="nav-link nav-link-blog">Blog</a>
+            <a href="#contact" class="nav-link nav-link-contact">Contact</a>
             <button class="nav-button">Login</button>
         </nav>
     </header>
 
-    <div class="wrapper">
-        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">Explore The Future<br> Of Space</h1>
+                    <p class="home__description">At Stellaris, we're committed to exploring the universe and creating new frontiers. Join us on an epic journey into the unknown and discover what awaits in the farthest reaches of the cosmos</p>
+                    <a href="#home" class="button home__button 1">Start your Journey</a>
+                    <a href="#home" class="button home__button 2">How we work?</a>
+                </div>
+                <div class="home__image">
+                    <img class="home__img section__img" src="assets/img/home-img.jpg" alt="Home image uwu">
+                </div>
+            </div>
+        </section>
 
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
+        <!--=============== ABOUT US ===============-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__images">
+                    <div class="about__img-wrapper-1 about__img-wrapper">
+                        <img class="about__img about-img-1" src="assets/img/about-img-1.jpg" alt="">
+                    </div>
+                    <div class="about__img-wrapper-2 about__img-wrapper">
+                        <img class="about__img about-img-2" src="assets/img/about-img-2.jpg" alt="">
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
 
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
+                <div class="about__data">
+                    <h1 class="about__title">Our Mission:<br> Beyond The Stars</h1>
+                    <p class="about__description">Stellaris was born from a desire to go beyond known limits. With a team of experts in space exploration and advanced technology, we are dedicated to discovering and colonizing new worlds. We believe that the future of humanity lies among the stars, and we're here to make it a reality.</p>
+                    <div class="about__social">
+                        <a href="" class="social__link"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="" class="social__link"><i class='bx bxl-github' ></i></a>
+                        <a href="" class="social__link"><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href="" class="social__link"><i class='bx bxl-linkedin'></i></a>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section id="services">
+            <!--=============== FIRST TAB ===============-->
+            <section class="services section">
+                <div class="services__container container">
+                    <div class="services__description">
+                        <h1 class="services__title">Our Services</h1>
+                        <p class="services__text">
+                            Our services are designed to take you into the unknown. From exploring new planets to colonizing distant worlds, Stellaris offers innovative solutions for all space enthusiasts.
+                        </p>
+                    </div>
+
+                    <div class="services__data">
+                        <div class="services__data-first">
+                            <div class="card">
+                                <div class="temporary_text">
+                                    Put the cursor here &lt;3
+                                </div>
+                                <div class="card_content">
+                                    <span class="card_title">Our Innovation</span>
+                                    <span class="card_subtitle">Explore our range of services that push the boundaries of innovation.</span>
+                                    <p class="card_description"> 
+                                        At Stellaris, we're committed to transforming the impossible into the achievable. Whether you're in search of pioneering technology solutions or sustainable methods for space exploration, we possess the expertise and vision to turn your ideas into reality.
+                                        <br> Our team is at the forefront of the industry, consistently breaking new ground with each project we undertake.
+                                        <br> Hover over each service to delve deeper into how we're not just meeting the future, but actively shaping it—one groundbreaking initiative at a time.
+                                    </p>
+                                    <a class="card-content-button" href="#about">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services__data-second">
+                            <div class="services__data-container-1">
+                                <div class="card-service-1">
+                                    <div class="service-icon">
+                                        <i class='bx bxs-rocket service-icon-i' ></i>
+                                    </div>
+                                    <span>Exploration</span>
+                                    <p class="service">Exploration and Discovering of New Planets</p>
+                                    <a class="card-service-button" href="#about">Learn More</a>
+                                </div>
+                            
+                                <div class="card-service-1">
+                                    <div class="service-icon"><i class='bx bxs-planet service-icon-i'></i></div>
+                                    <span> Colonization </span>
+                                    <p class="service"> Colonization of Hundreds of New Worlds in the Space</p>
+                                    <a class="card-service-button" href="#about">Learn More</a>
+                                </div>
+                            </div>
+
+                            <div class="services__data-container-2">
+                                <div class="card-service-2">
+                                    <img src="assets/img/nightsky-stars.jpg" alt="">
+                                    <div class="card__content-cover">
+                                    <p class="card__title">Our Endless Journey</p>
+                                    <p class="card__description">
+                                        Embark on a journey of limitless possibilities with our tailored solutions. 
+                                        From advanced technological innovations to sustainable strategies, we're here to guide you through the complexities of the modern world. 
+                                        Dive deeper and discover how we can help you achieve your goals with precision and expertise.
+                                    </p>
+                                    <a class="card-service-button-2" href="#about">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
+            </section>
+
+            <!--=============== SECOND TAB ================-->
+            <section class="services-2 section">
+                <div class="services-2__container container grid">
+                    <div class="services-2__images">
+                        <div class="services-2__image">
+                            <img class="services-2__img" src="assets/img/services-2nd-section.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-2__data">
+                        <h1 class="services-2__title">
+                            Innovation In <br>
+                            Every Step
+                        </h1>
+                        <p class="services-2__description">
+                            At Stellaris, our mission goes beyond the mere discovery of new worlds; it's about ensuring that these uncharted territories are meticulously prepared to sustain human life. 
+                            We harness cutting-edge technology and pioneering research to develop sustainable solutions that make life in space not just possible, but thriving. 
+                            From the moment a planet is identified as a potential new home, our team works tirelessly to transform it into a habitable environment, ensuring that future generations can live, grow, and prosper among the stars.
+                        </p>
+                        <a href="#services" class="services-2__button services-2__type-1">
+                            <span class="services-2__button-txt">More About Us!!</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+            </section>
+        </section>
+
+        <!--=============== BLOG ===============-->
+        <section class="blog section" id="blog">
+            <div class="blog__container container grid">
+                <div class="blog__description">
+                    <h1 class="blog__title">
+                        Client Opinions
+                    </h1>
+                    <p class="blog__text">
+                        We take pride in offering high-quality services that inspire our clients. Here you can read what some of our explorers have to say about their experiences with Stellaris.
+                    </p>
                 </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+
+                <div class="blog__data">
+                    <div class="blog__data-container">
+                        <p class="blog__data-text">
+                            "Stellaris has changed my life in ways I never thought possible. The opportunity to explore the vastness of space, to see distant worlds with my own eyes,
+                            <br> is something I always dreamed of, but never imagined could become a reality. Their expertise, passion, and dedication to space exploration are evident in every step of the journey.
+                            <br> The experience of traveling through space is nothing short of breathtaking. I can’t thank Stellaris enough for giving me this once-in-a-lifetime opportunity."
+                        </p>
+                        <div class="blog__data-information">
+                            <div class="blog__data-picture">
+                                <img src="assets/img/blog-maureen-robinson.jpg" alt="">
+                            </div>
+                            <p class="blog__data-info">
+                                Mauren Boltzmann Robinson <br> <span> Premium Client </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog__data-container">
+                        <p class="blog__data-text">
+                            "Colonizing a new world was an experience that has left an indelible mark on my soul. From the initial preparations to the moment we stepped onto the surface of a new planet, Stellaris ensured that every detail was taken care of.
+                            <br> The journey was challenging but incredibly rewarding. 
+                            <br>I never imagined that I would be a pioneer in the colonization of a distant world, but thanks to Stellaris, I have lived that dream. The memories I’ve made and the bonds I’ve formed with my fellow explorers are something I will cherish forever."
+                        </p>
+                        </p>
+                        <div class="blog__data-information">
+                            <div class="blog__data-picture">
+                                <img src="assets/img/blog-kobeni-yonomori.jpg" alt="">
+                            </div>
+                            <p class="blog__data-info">
+                                Kobeni Yonomori Orionis <br> <span> Premium Client </span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__content">
+                    <h2 class="section__title-center contact__title">Contact Us From <br> Here</h2>
+                    <p class="contact__description">You can reach us through the following means. We are happy to assist you with anything you need, whether it's more information about our services or joining our mission.</p>
+                </div>
+
+                <ul class="contact__content grid">
+                    <li class="contact__address">Telephone: <span class="contact__information"> +7s2ae 9e43 - 3d48 - 4e37</span></li>
+                    <li class="contact__address">Email: <span class="contact__information"> Alpha/BetaOrionis.team@gmail.com</span></li>
+                    <li class="contact__address">Location: <span class="contact__information"> Lunarhengeaiae - Trappist 1e - Trappist - 1 <br>
+                                                                                               Milky Way - Observable Universe</span></li>
+                </ul>
+
+                <a href="#contact" class="contact__button contact__type-1">
+                    <span class="contact__button-txt">Contact Us</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== LOGIN ===============-->
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section" id="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Stellaris</a>
+                <p class="footer__description">Pursue your path to the stars and <br> become a Cosmic Dreamer with Us.</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Pricing</a></li>
+                    <li><a href="#" class="footer__link">Discounts</a></li>
+                    <li><a href="#" class="footer__link">Report a Problem</a></li>
+                    <li><a href="#" class="footer__link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">Our Mission</a></li>
+                    <li><a href="#" class="footer__link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Community</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Events</a></li>
+                    <li><a href="#" class="footer__link">Discussion Forum</a></li>
+                    <li><a href="#" class="footer__link">Explorers Club</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/dario-arica-camacho-60ab822ba/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/SirBoltzmann" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/darioaricacamacho/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            © Stellaris - Alpha / Beta Orionis inc. | All Rights Reserved 2045
+        </p>
+    </footer>
+
 </body>
-<script src="app.js"></script>
+<script src="/assets/js/app.js"></script>
 </html>
